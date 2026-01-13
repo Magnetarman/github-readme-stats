@@ -5,8 +5,10 @@ import langCard from "./api/top-langs.js";
 import wakatimeCard from "./api/wakatime.js";
 import gistCard from "./api/gist.js";
 import express from "express";
+import { injectSpeedInsights } from "@vercel/speed-insights/node";
 
 const app = express();
+injectSpeedInsights();
 const router = express.Router();
 
 router.get("/", statsCard);
