@@ -16,6 +16,9 @@ import { parseArray, parseBoolean } from "../src/common/ops.js";
 import { renderError } from "../src/common/render.js";
 import { fetchTopLanguages } from "../src/fetchers/top-languages.js";
 import { isLocaleAvailable } from "../src/translations.js";
+import { injectSpeedInsights } from "@vercel/speed-insights/node";
+
+injectSpeedInsights();
 
 // @ts-ignore
 export default async (req, res) => {
