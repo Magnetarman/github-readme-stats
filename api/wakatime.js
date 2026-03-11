@@ -16,7 +16,7 @@ import {
   retrieveSecondaryMessage,
 } from "../src/common/error.js";
 import { parseArray, parseBoolean } from "../src/common/ops.js";
-import { injectSpeedInsights } from "@vercel/speed-insights/node";
+import { injectSpeedInsights } from "@vercel/speed-insights";
 
 injectSpeedInsights();
 
